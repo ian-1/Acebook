@@ -1,10 +1,7 @@
 <h1>Images#index</h1>
 
-<%= form_for @image do |image_form| %>
-  Upload: <%= image_form.file_field :picture %>
+<%= form_with model: @image, method: :post do |image_form| %>
+  Upload: <%= image_form.file_field :images %>
+  <%= image_form.submit %>
 <% end %>
 
-<form action="/upload" method="post" >
-  <input type="file" id="myFile" name="filename">
-  <input type="submit">
-</form>

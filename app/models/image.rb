@@ -1,3 +1,3 @@
-class Image < ApplicationRecord
-  belongs_to :user_id
+class Images < ApplicationRecord
+  # belongs_to :user_id
 end
