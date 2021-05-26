@@ -28,8 +28,8 @@ document.addEventListener("DOMContentLoaded", () => {
   document.documentElement.setAttribute("class",userColorMode)
 
   if (userColorMode === "dark"){
-    userSwitch = toggleSwitch.checked
-  }
+    toggleSwitch.checked = true 
+  } 
 
   toggleSwitch.addEventListener("change", () => {
     if (toggleSwitch.checked === true){
