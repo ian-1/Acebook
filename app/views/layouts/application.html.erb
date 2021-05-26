@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html class="light">
   <head>
     <title>Acebook</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag 'application', media: 'all' %>
     <%= javascript_include_tag 'application' %>
+  
 
     <div id='titlebar'>
       <%= image_tag ("logo_no_bg.png"), class: "img-responsive" %>
@@ -15,13 +16,13 @@
     </div>
   </head>
 
-  <body class="<%= cookies[:theme] %>">
-
-    <% if cookies[:theme] == "light" %>
-      <button class="dark_mode"><%= link_to "Dark mode", root_path(theme: "dark") %></button>
-    <% else %>
-      <button class="light_mode"><%= link_to "Light mode", root_path(theme: "light") %></button>
-    <% end %>
+  <body>
+  
+    <h3>Dark Mode: </h3>
+    <label class="switch">
+      <input type="checkbox", class="toggle-mode">
+      <span class="slider round"></span>
+    </label>
 
     <%= yield %>
   </body>
