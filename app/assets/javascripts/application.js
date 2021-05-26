@@ -43,4 +43,8 @@ document.addEventListener("DOMContentLoaded", () => {
   })
 })
   
+function hideDarkMode() {
+  document.documentElement.removeAttribute("class")
+ 
+}
   

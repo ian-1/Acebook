@@ -19,7 +19,7 @@
 .light {
 
   background-color: #f0f2f5;
-  /* background-color:#a7effa; */
+  background-color:#a7effa; 
   color: #1c1e21;
   font-family: helvetica, sans-serif; 
   text-align: left;
@@ -64,35 +64,6 @@
   background-color: white;
 }
 
-.dark_mode {
-  width: 80px;
-  height:50px;
-  background-color: #f0f2f5;
-  border: 30px;
-  border-radius: 20%;
-  right: 60px;
-  transition-duration: 1s;
-}
-
-.dark_mode:hover {
-  background-color: #5f6dec;
-  color: white;
-}
-
-.light_mode {
-  width: 80px;
-  height:50px;
-  background-color: #81828d;
-  border: 30px;
-  border-radius: 20%;
-  right: 60px;
-  transition-duration: 1s;
-}
-
-.light_mode:hover {
-  background-color: #f0f2f5;
-  color: white;
-}
 
 .posts-light {
   background-color: rgb(177, 201, 247);
