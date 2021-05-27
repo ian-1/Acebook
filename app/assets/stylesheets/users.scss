@@ -93,33 +93,182 @@
 }
 
 // Profile (users/show.html.erb)
-#profile-postname {
-    font-size: large;
-    font-weight: bold;
-    text-align: left;
-    .mini-avatar {
-      display:inline-block;
-      width: 40px;
-      height: 40px;
-      margin-right: 8px;
-      border-radius:50%;
-      vertical-align: top;
-      img{
-        width: 100%;
-        height: 100%;
-        border: 1px solid #efefef;
-        border-radius: 50%;
+// #profile-postname {
+//     font-size: large;
+//     font-weight: bold;
+//     text-align: left;
+ 
+//     .mini-avatar {
+//       display:inline-block;
+//       width: 40px;
+//       height: 40px;
+//       margin-right: 8px;
+//       border-radius:50%;
+//       vertical-align: top;
+//       img{
+//         width: 100%;
+//         height: 100%;
+//         border: 1px solid #efefef;
+//         border-radius: 50%;
         
-      }
-    }
-    .poster-name {
-      display:inline-block;
-      margin-right:10px;
-      vertical-align: 40%;
+//       }
+//     }
+//     .poster-name {
+//       display:inline-block;
+//       margin-right:10px;
+//       vertical-align: 40%;
 
-      #profile-timeago {
-        color: #666666;
-        font-size: medium;
-      }
+//       #profile-timeago {
+//         color: #666666;
+//         font-size: medium;
+//       }
+//     }
+//   }
+
+  .profile-picture{
+    position: relative;
+    left: 300px;
+    bottom: 200px;
+    img{
+      border-radius: 30%;
+      width: 15%;
+      
     }
   }
+
+  .user-info{
+    margin: auto;
+    width: 50%;
+    padding: -10%;
+    border: 3px white;
+    position: relative;
+    left: 300px;
+    bottom: 5px;
+  }
+
+
+
+//   /*Just the background stuff*/
+// // span.s1{
+// // position: absolute;
+// // top: 0;
+// // font-size : 15rem;
+// // font-weight : 800;
+// // text-transform : uppercase;
+// // color : #3C4447;
+// // }
+// // span.s2{
+// // font-weight : 800;
+// // position : absolute
+// // bottom : 0;
+// // right : 0;
+// // font-size : 15rem;
+// // text-transform : uppercase;
+// // color : #3C4447;
+// // }
+// // /*My hum... body.. yeah..*/
+// // body{
+// // background-color: #353B3F;
+// // font-family: 'Roboto', sans-serif;
+// // }
+// /* The card */
+// .posts{
+// position : relative;
+// height: 450px;
+// width: 900px;
+// margin : 200px auto;
+// background-color : #FFF;
+// -webkit-box-shadow: 10px 10px 93px 0px rgba(0,0,0,0.75);
+// -moz-box-shadow: 10px 10px 93px 0px rgba(0,0,0,0.75);
+// box-shadow: 10px 10px 93px 0px rgba(0,0,0,0.75);
+// }
+
+// /* Image on the left side */
+// .post-image{ 
+// float: left;
+// position: relative;
+// left : 30px;
+// top : -30px;
+// height : 320px;
+// width : 530px;
+// -webkit-box-shadow: 10px 10px 60px 0px rgba(0,0,0,0.75);
+// -moz-box-shadow: 10px 10px 60px 0px rgba(0,0,0,0.75);
+// box-shadow: 10px 10px 60px 0px rgba(0,0,0,0.75);
+// overflow: hidden;
+// /*object-fit: cover;*/
+// /*object-position: center;*/
+// }
+
+// .post-image{
+// position: absolute;
+// left: 50%;
+// top: 50%;
+// height: auto;
+// width: 100%;
+// -webkit-transform: translate(-50%,-50%);
+// -ms-transform: translate(-50%,-50%);
+// transform: translate(-50%,-50%);
+// }
+
+// /* Right side of the card */
+// .profile-postcontent{
+// margin-left: 590px;
+// margin-right: 20px;
+// }
+
+// // h1
+// // padding-top : 15px
+// // font-size : 1.3rem
+// // color : #4B4B4B
+
+// .poster-name{
+// background-color : #9ECAFF;
+// height: 30px;
+// width: 110px;
+// border-radius : 20px;
+// }
+
+// .mini-avatar{
+//   background-color : #9ECAFF;
+//   height: 30px;
+//   width: 110px;
+//   border-radius : 20px;
+// padding-top : 5px;
+// margin-left : 10px;
+// float : left;
+// height : 20px;
+// width : 20px;
+// border-radius : 50%;
+// }
+
+// // h2
+// // padding-top : 8px
+// // margin-right : 6px
+// // text-align : right
+// // font-size : 0.8rem
+// // color :white
+
+// // .separator
+// // margin-top : 10px
+// // border : 1px solid #C3C3C3
+
+// // p
+// // text-align: justify
+// // padding-top : 10px
+// // font-size : 0.95rem
+// // line-height: 150%
+// // color : #4B4B4B
+
+// /* DATE of release*/
+// #profile-timeago{
+// position : absolute;
+// left : 30px;
+// bottom : -120px;
+// font-size : 6rem;
+// color : #C3C3C3;
+// position : absolute;
+// left : 30px;
+// bottom : -55px;
+// font-size : 2rem;
+// color : #C3C3C3;
+// }
