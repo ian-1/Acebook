@@ -2,6 +2,10 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
+// edit profile view
+.edit-profile-h1 {
+  color:#054976;
+}
 
 /* The switch - the box around the slider */
 .switch {
@@ -66,7 +70,7 @@
     border-radius: 50%;
   }
 .light {
-    background-color: #f0f2f5;
+    background-color: #c6eef5;
     color: #1c1e21;
     font-family: helvetica, sans-serif; 
     text-align: left;

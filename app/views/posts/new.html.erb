@@ -25,10 +25,7 @@
 
     <div class="form">
       <%= form_for @post do |form| %>
-      <%= form.label :message %>
       <%= form.text_field :message, placeholder:"Message" %>
-
-      <%= form.label :photo %>
       <%= form.file_field :image, multiple: true, placeholder:"Photo" %>
 
       <%= form.submit "Submit", class:"btn btn-primary btn-block btn-large" %>
