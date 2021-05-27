@@ -277,7 +277,12 @@
   height:300px;
   border: 3px;
 }
-form h1 { color: rgb(160, 160, 160); text-shadow: 0 0 10px rgba(0,0,0,0.3); letter-spacing:2px; text-align:center; }
+form h1 { 
+  color: rgb(160, 160, 160);
+  text-shadow: 0 0 10px rgba(0,0,0,0.3); 
+  letter-spacing:2px; 
+  text-align:center; 
+}
 
 input { 
   width: 93.5%; 
