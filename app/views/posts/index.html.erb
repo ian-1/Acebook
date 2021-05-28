@@ -57,14 +57,6 @@
             <% end %>
           </div>
           <br>
-          <!-- Edit post button, does not link yet, to review if we still want this -->
-          <% if false %>
-            <%= link_to 'Edit', edit_post_path(post) %>
-          <% end %>
-        </form>
-        <br>
-      
-      <!--- check to see if cookies theme is correct for individual likes -->
       <div class="comments-likes-count">
         <div class="likes">
           <div class='postlikes'>
@@ -95,7 +87,7 @@
               <i>
                 <span id='timeago'> <%= "- #{time_ago_in_words(comment.created_at)} #{"ago"}" %> </span>
                 <% if current_user.id == comment.user_id %>
-                <p> <%= button_to "❌",[comment.post, comment], method: :delete, data: { confirm: "Are you sure" } %></p>
+                <div class="delete_button"> <%= button_to "❌",[comment.post, comment], method: :delete, data: { confirm: "Are you sure" }%></div>
                 <% end %>
               </i>
               <br>
