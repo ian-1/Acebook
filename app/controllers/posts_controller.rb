@@ -23,6 +23,13 @@ class PostsController < ApplicationController
     redirect_to posts_url #change to root 
   end
 
+  def destroy
+    @posts.destroy
+    redirect_to posts_url
+  end
+
+
+
   # def update
   #   @post = Post.find(params[:post_id])
   #   @post.image <<

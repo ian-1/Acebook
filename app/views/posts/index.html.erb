@@ -52,6 +52,7 @@
         <% end %>
          <br>
             <i>
+                <%= link_to "Delete", post_path(@posts), method: :delete, data: { confirm: 'Are you sure' } %>
                 <span id='timeago'> <%= " posted #{time_ago_in_words(post.created_at)} #{"ago"}" %> </span>
               </i>
       </legend>
