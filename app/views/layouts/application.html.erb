@@ -36,6 +36,16 @@
         let x = document.getElementById("nav_edit_profile");
         x.style.display = "none";
       }
+
+      function hide_titleBar() {
+        let x = document.getElementById("titlebar");
+        x.style.display = "none";
+      }
+
+      function hide_title() {
+        let x = document.getElementById("title");
+        x.style.display = "none";
+      }
       
     </script>
 
@@ -57,13 +67,6 @@
     </div>
 <br>
 <br>
-   <!--
-    <% if cookies[:theme] == "light" %>
-      <button class="dark_mode"><%= link_to "Dark mode", root_path(theme: "dark") %></button>
-    <% else %>
-      <button class="light_mode"><%= link_to "Light mode", root_path(theme: "light") %></button>
-    <% end %>
-    -->
 
   <div id="yield">
     <% flash.each do |type, msg| %>
