@@ -1,7 +1,7 @@
 
 .light {
-  background-color: #c6eef5;
-  color: #ee834e;
+  background-color: #f0f2f5;
+  color: #1c1e21;
   font-family: helvetica, sans-serif; 
   text-align: left;
 }
@@ -227,12 +227,12 @@
   height: 360px;
   border-radius: 15px;
   padding: 1.5rem;
-  background: #55bdca;
+  background: white;
   position: relative;
   display: flex;
   align-items: flex-end;
   transition: 0.4s ease-out;
-  box-shadow: 0px 7px 10px #4297a8;
+  box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
   z-index: 3;
 
   .comments-form {
@@ -289,7 +289,7 @@
   transition: 0.5s;
   opacity: 0;
 }
-.card .info {
+.card #postcontent {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -314,11 +314,4 @@
   letter-spacing: 1px;
   font-size: 15px;
   margin-top: 8px;
-}
-
-.delete_button{
-  border: hidden;
-  width: 25px;
-  height: 25px;
-  z-index: 4;
 }

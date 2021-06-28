@@ -16,7 +16,7 @@
   <%= yield %>
 
   <br>
-  <% @posts.reverse.each do |post| %>
+  <% @posts.reverse.each do |post| %> <!-- 12--><!-- a-->
     <br>
 
     <br>
@@ -24,23 +24,23 @@
       <form action='/posts/<%= post.id %>/like'>
         <div class="card">
           <div id='postname'>
-            <% @users.each do |user| %>
-              <% if user.id == post.user_id %>
-                <% if user.avatar.attached? %>
+            <% @users.each do |user| %> <!-- 6--><!-- b-->
+              <% if user.id == post.user_id %> <!-- 10--><!-- c-->
+                <% if user.avatar.attached? %> <!-- 9--><!-- d-->
                   <%=image_tag(user.avatar, :class => "post-avatar") %>
                 <% else %>
                   <%=image_tag("default_avatar.png", :class => "post-avatar")%>
-                <% end %>
-          <% end %>
+                <% end %> <!-- 12--><!-- d-->
+              <% end %> <!-- 11--><!-- c-->
         </div>
         <div class="poster-name-link">
-            <% if user.id == post.user_id %>
+            <% if user.id == post.user_id %> <!-- 8--><!-- e-->
             <% user_name = user.name  %>
             <% user_id = user.id %>
-            <% end %>
+            <% end %> <!-- 10--><!-- e-->
             <a href='/users/<%=user_id%>'><%= user_name %></a>
         </div>
-        <% end %>
+        <% end %> <!-- 9--><!-- b-->
          <br>
             <i>
               <span class="timeago-posts" id='timeago'>
@@ -50,13 +50,14 @@
           </div>
           <div id='postcontent'>
             <%= post.message %><br>
-            <% if post.image.attached? %>
-              <% post.image.each do |pic|%>
+            <% if post.image.attached? %> <!-- 7--><!-- f-->
+              <% post.image.each do |pic|%> <!-- 6--><!-- g-->
                 <img src="<%=(url_for(pic))%>" class="post-image">
-              <% end %>
-            <% end %>
+              <% end %> <!-- 8--><!-- g-->
+            <% end %> <!-- 7--><!-- f-->
           </div>
           <br>
+        
       <div class="comments-likes-count">
         <div class="likes">
           <div class='postlikes'>
@@ -72,43 +73,45 @@
        </div> 
 <div class="info">
         <div class="display-comments">
-          <% post.comments.each do |comment| %>
+          <% post.comments.each do |comment| %> <!-- 5--><!-- h-->
             <% commenter = 'anonymous' %>
-              <% @users.each do |user| %>
-                <% if user.id == comment.user_id %>
+              <% @users.each do |user| %> <!-- 4--><!-- i-->
+          
+                <% if user.id == comment.user_id %> <!-- 3--><!-- j-->
                 <% commenter = user.name %>
                 <% commenter_id = user.id %>
                 <a href='/users/<%=commenter_id%>'><%= commenter %></a>
                 🗣 <%= comment.body %>
-                <% end %>
+                <% end %> <!-- 6--><!-- j-->
               <b>
               </b>
-              <% end %>
+              <% end %> <!-- 5--><!-- i-->
               <i>
                 <span id='timeago'> <%= "- #{time_ago_in_words(comment.created_at)} #{"ago"}" %> </span>
-                <% if current_user.id == comment.user_id %>
-                <div class="delete_button"> <%= button_to "❌",[comment.post, comment], method: :delete, data: { confirm: "Are you sure" }%></div>
-                <% end %>
+                <% if current_user.id == comment.user_id %> <!-- 2--><!-- k-->
+                <p> <%= button_to "❌",[comment.post, comment], method: :delete, data: { confirm: "Are you sure" } %></p>
+                <% end %> <!-- 4--><!-- k-->
               </i>
               <br>
-            <% end %>
+            <% end %> <!-- 3--><!-- h-->
             <br>
-        </div>  
+        </div>
+      </div>    
               <br>
             </div>
             <div class="comments-form">
-              <%= form_for([post, post.comments.build]) do |f| %>
+              <%= form_for([post, post.comments.build]) do |f| %> <!-- 1--><!-- elomelo p-->
             
                 <%= f.text_area :body, class: 'comment-textbox', placeholder: "Add a comment..." %>
                 <%= f.submit :submit, class: "btn btn-primary btn-block btn-large", value: "Post" %>
-              <% end %>
+              <% end %> <!-- 2--><!-- elomelo p-->
           
           </div>
         </div>
       
       </div>
     </div>
-  <% end %>
+  <% end %> <!-- 1--><!-- a-->
 
   <script>
     hide_timeline()

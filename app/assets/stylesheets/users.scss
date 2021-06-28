@@ -66,15 +66,15 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 .light {
-  background-color: #c6eef5;
-    color: #1F2833;
+  background-color: #f0f2f5;
+  color: #1c1e21;
   font-family: helvetica, sans-serif; 
   text-align: left;
 }
     
 .dark {
   background-color: #1F2833;
-  color: #a1bee4;
+  color: #ffffff;
   font-family: helvetica, sans-serif; 
   text-align: left;
 }
@@ -172,7 +172,6 @@ input:checked + .slider:before {
   font-size: large;
   font-weight: bold;
   text-align: left;
-  color: #1F2833;
   top: 7%;
   z-index: 7;
   position: absolute;
@@ -197,14 +196,12 @@ input:checked + .slider:before {
       position:static; 
     }
   }
-
-  .poster-name-link {
-    display:inline-block;
-    margin-right:0px;
-    vertical-align: 25px;
-    font-size: larger;
-  }
-
+  // .poster-name-link {
+  //   display:inline-block;
+  //   margin-right:0px;
+  //   vertical-align: 25px;
+  //   font-size: larger;
+  // }
 }
 
 
@@ -220,12 +217,12 @@ input:checked + .slider:before {
   height: 360px;
   border-radius: 15px;
   padding: 1.5rem;
-  background:#55bdca;
+  background: white;
   position: relative;
   display: flex;
   align-items: flex-end;
   transition: 0.4s ease-out;
-  box-shadow: 0px 7px 10px #4297a8;
+  box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
   z-index: 3;
   margin: auto;
   margin-bottom: 100px;
@@ -247,35 +244,36 @@ input:checked + .slider:before {
     justify-content: space-around;
   }
 
-  .comments-form {
-    z-index: 4;
-  }
-  .profile-post-image {
-    max-width: 50%;
-    max-height: 50%;
-    // center image in post card
-    padding: 1px;
-  }
-  
-  .comment-textbox {
-    width: 100%;
-    font-family: Helvetica, sans-serif;
-    border: none;
-  
-  }
-  .comments-likes-count {
-    z-index: 4;
-    font-size: medium;
-    padding-right: 3%;
-    float: left;
 
-    .postlikes {
-    float: left;
-    }
-    .postcomments {
-      float: right;
-    }
-  }
+  // .comments-form {
+  //   z-index: 4;
+  // }
+  // .profile-post-image {
+    // max-width: 50%;
+    // max-height: 50%;
+    // // center image in post card
+    // padding: 1px;
+  // }
+  
+  // .comment-textbox {
+  //   width: 100%;
+  //   font-family: Helvetica, sans-serif;
+  //   border: none;
+  
+  // }
+  // .comments-likes-count {
+  //   z-index: 4;
+  //   font-size: medium;
+  //   padding-right: 3%;
+  //   float: left;
+
+  //   .postlikes {
+  //   float: left;
+  //   }
+  //   .postcomments {
+  //     float: right;
+  //   }
+  // }
 }
 
 // .post-image:hover {
@@ -369,32 +367,6 @@ input:checked + .slider:before {
 }
 
 h1{
-  color:  #ee834e;
-  text-shadow: -2px 2px 2px #4297a8;
-  text-align: center;
-  font-size: 50px;
-}
-
-.profile_name {
-  color:  #ee834e;
-  text-shadow: -1px 1px 1px #4297a8;
-  text-align: left;
-  font-size: 40px;
-}
-h2 {
-  color:  #ee834e;
-  text-shadow: -1px 1px 1px #4297a8;
-  text-align: left;
-  font-size: 30px;
-}
-
-.bio{
-  color:  #ee834e;
-  text-shadow: -1px 1px 1px #4297a8;
-  text-align: left;
-}
-
-.title_h1{
   margin: 0;
   padding: 0;
   position: absolute;
